@@ -1,0 +1,43 @@
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  width: 300px;
+  margin: 50px auto;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+#display {
+  grid-column: span 4;
+  height: 50px;
+  background-color: #eee;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  height: 50px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+}
+
+button.operator {
+  background-color: #f0f0f0;
+}
+
+button.equal {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.clear {
+  background-color: #f44336;
+  color: white;
+}
